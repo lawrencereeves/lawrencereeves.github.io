@@ -1,0 +1,17 @@
+HOSTED ON GITHUB
+
+username lawrencereeves
+email lawrencereeves
+
+
+edit local html with dreamweaver (for example)
+
+open github desktop application
+-click commir to main
+-click push origin
+
+done
+
+
+Can go to github on web to verify, adjust settings etc if desired
+settings -> pages
