@@ -1,0 +1,7 @@
+# files not to upload to git
+
+# old folder
+old
+
+# all text files
+*.txt
