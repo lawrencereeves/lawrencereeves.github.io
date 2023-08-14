@@ -5,3 +5,4 @@ old
 
 # all text files
 *.txt
+.DS_Store
