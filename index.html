@@ -67,6 +67,44 @@
             text-align: center;
             margin-top: 2rem;
 			color: #888;}
+		
+		/* Container for the two-column list */
+  .list-container {
+    display: flex;
+    max-width: 600px; /* Adjust this width as needed */
+    margin: 0 auto; /* Center the list */
+	  margin-left: 10px;
+  }
+
+  /* Style for each column */
+  .list-column {
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 50%; /* Set a fixed width for each column */
+    margin-right: 0px; /* Adjust the gap between columns */
+  }
+
+  /* Style for the second column with fixed width */
+  .list-column:last-child {
+    width: 80px; /* Set a fixed width for the second column */
+	  text-align: right;
+	    }
+
+  /* Style for each list item */
+  .list-item {
+    margin-bottom: 5px;
+    padding: 5px;
+    border: 1px red dashed; /* Remove the border from list items */
+    background-color: transparent; /* Remove the background color */
+    position: relative; /* Needed for ::before pseudo-element */
+  }
+
+  /* Style for the bullet in the first column */
+  .list-column:first-child .list-item::before {
+    content: '\2022'; /* Unicode character for a bullet (•) */
+    position: absolute;
+    left: -10px; /* Adjust the distance of the bullet from the text */
+  }
     </style>
 </head>
 <body>
@@ -99,8 +137,21 @@
 			<li>JSJ decompositions of groups&nbsp;&nbsp;&nbsp;&nbsp; [<a href="https://arxiv.org/abs/2006.15684" target="_blank">1</a>, <a href="https://arxiv.org/abs/2003.00311" target="_blank">2</a>]</li>
           <li> automatic groups</li>
         </ul>
-        
-        
+       <!-- 
+<div class="list-container">
+
+<div class="list-column">
+    <div class="list-item">Coxeter groups</div>
+    <div class="list-item">Item 2</div>
+    <div class="list-item">Item 3</div>
+  </div>
+  <div class="list-column">
+    <div class="list-item">[<a href="https://arxiv.org/abs/1911.07237" target="_blank">1</a>, <a href="https://arxiv.org/abs/1811.05628" target="_blank">2</a>]</div>
+    <div class="list-item">Item 5</div>
+    <div class="list-item">Item 6</div>
+  </div>
+</div>
+        -->
         <h2 style="margin-top: 2rem;">Teaching&nbsp;</h2>  
 	  <p>Recent subjects taught:</p>
         <ul>
